@@ -15,19 +15,49 @@
 </head>
 <body>
 <div class="contenedor">
+<!-- Header -->
     <header class="header">
         <img class="perfil" src="../IMG/foto portfolio.png" alt="">
         <h1 class="titulo">Rocchietti Lucas</h1>
     </header>
-        <nav class="conteiner">
-                <ul class="tituloSections">
-                <li class="link"><a href="about-us.html">About Us</a></li>
-                <li class="link"><a href="../index.html">Home</a></li>
+<!-- Navegacion -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">MY PORTFOLIO</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about-us.html">About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Proyectos
                 </a>
-                <li class="link"><a href="myjob.html">My Job</a></li>
-                <li class="link"><a href="proyectos.html">Projects</a></li>
+                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                  <li><a class="dropdown-item" href="contacto.html">1</a></li>
+                  <li><a class="dropdown-item" href="myjob.html">2</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="proyectos.html">3</a></li>
                 </ul>
-        </nav>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="myjob.html">Trabajo</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+<!-- Seccion 1 -->
         <article>
             <div class="container h-75">
                 <div class="row">
@@ -43,6 +73,7 @@
                 </div>
               </div>
         </article>
+<!-- Seccion 2 -->
     <main class="contenedorMain">  
         <section>
             <div class="fm">
@@ -55,12 +86,13 @@
                 </div>
         </section>
     </main>
+<!-- Footer -->
     <footer>
         <div class="contein">
             <div class="conteinFooter">
                 <div class="columna">
                     <h4>Acerca de Cookies:</h4>
-                    <p>Cookies are text files with small pieces of data — like a username and password — that are used to identify your computer as you use a computer network. Specific cookies known as HTTP cookies are used to identify specific users and improve your web browsing experience. Data stored in a cookie is created by the server upon your connection. This data is labeled with an ID unique to you and your computer. When the cookie is exchanged between your computer and the network server, the server reads the ID and knows what information to specifically serve to you. Magic cookies were already used in computing when programmer Lou Montulli had the idea of using them for web communications in June 1994. At the time he was an employee of Netscape Communications , which was developing an e- commerce application for MCI . Vint Cerf and John Klensin represented MCI in technical discussions with Netscape Communications. Because they didn't want the MCI servers to have to retain partial transactional states, they asked Netscape to find a way to save those states on each user's computer. cookies _they offered a solution to the problem of reliably implementing a virtual shopping cart.</p>
+                    <p>Cookies are text files with small pieces of data — like a username and password — that are used to identify your computer as you use a computer network. Specific cookies known as HTTP cookies are used to identify specific users and improve your web browsing experience. Data stored in a cookie is created by the server upon your connection. This data is labeled with an ID unique to you and your computer. </p>
                 </div>
                 <div class="columna2">
                     <h4>Redes Sociales:</h4>
@@ -86,6 +118,7 @@
                         </div>
                 </div>
             </div>
+<!-- Copyright -->
             <div class="conteinCopy">
                 <div class="copyright">
                     <p>© Copyright 2020-2022 Rocchiettilucas.es - Todos los Derechos Reservados </p>

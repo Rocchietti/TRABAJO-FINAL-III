@@ -1,5 +1,6 @@
 @import "_var";
 @import "_mixin.scss";
+@import "_ifscreen.scss";
 body {
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
@@ -258,6 +259,7 @@ $redes: (
     @include flex;
     align-items:baseline
 }
+// About Us
 .aboutUs{
     border-bottom-left-radius: $padding;
     border-bottom-right-radius: $padding;
@@ -306,6 +308,7 @@ article{
     margin-block-start: 1.50em;    
     }
 }
+// Contacto
 .fm {
     background-image: url("IMG/bus.jpg");
     background-size: cover;
@@ -334,6 +337,7 @@ article{
     padding: $padding;        
     }
 }
+// Myjob
 .dedicar{
     color: $color; 
     font-size: 30px;
@@ -487,6 +491,7 @@ tfoot{
       filter: hue-rotate(360deg);
     }
   }
+//Proyectos
   .cobros{
       padding: 20px;
   }
@@ -506,23 +511,5 @@ tfoot{
     font-size: 17px;
     font-weight: bolder;          
       }
-}
-@media screen and (max-width: 768px){
-    p, h1, h2, h3, h4{
-        font-size: 30px ;
-    }
-}
-@media screen and (min-width: 1080px)
-{
-    h1, h2, h3{
-        font-size: 50px;
-    }
-    .contenedor{
-        grid-template-areas: "header header header"
-        "nav nav nav"
-        "article article article"
-        "article section section"
-        "footer footer footer";
-    }
 }
 
