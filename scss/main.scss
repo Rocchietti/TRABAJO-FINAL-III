@@ -511,8 +511,13 @@ tfoot{
     font-weight: bolder;          
       }
 }
-@media screen and (min-width: 768px){
-    h1,p,h2,h3,h4{
-        font-size: 75px;
-    }
+@media only screen and (min-width: 768px) {
+    .contenedor{
+    grid-template-areas: "header header"
+    "nav nav"
+    "article article"
+    "section section"
+    "footer footer"
+    ;
+}
 }
