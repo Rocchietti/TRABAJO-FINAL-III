@@ -43,9 +43,23 @@ nav{
     grid-area: header;
 }
 .titulo {
+    @include mobile{
+        font-size: 25px;
+        text-align: center;
+        margin-top: 25px;
+        margin-left: 20px ;
+    }
+    @include tablet{
+        font-size: 40px;
+        text-align: center;
+    }
+    @include desktop{
+        font-size: 3em;
+        margin-top: 0px;
+        margin-left: 0px ;
+    }
     font-family: merriweather, serif;  
     margin-block-start: 0.10em;
-    font-size: 3em;
     text-align:center;
     color: rgb(148, 87, 8);
 }
@@ -128,10 +142,25 @@ a{
     }
 }
 iframe{
+    @include mobile{
+        width: 300px;
+        height: 250px;
+    }
+    @include tablet{
+        width: 500px;
+        height: 300px;
+    }
+    @include desktop{
+        width: 780px;
+        height: 455px;
+    }
     border: 55px rgba(155, 145, 5, 0.733) outset
 }
 .seccion2{
     h3{
+    @include tablet{
+        text-align: center;
+    }
     color: $color; 
     text-align: left; 
     font-size: 30px; 
@@ -149,6 +178,12 @@ iframe{
     }
 }
 .flex{
+    @include tablet{
+        display: flex;
+        flex-direction: column-reverse ;
+        justify-content: center;
+        align-items: center;
+    }
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -166,10 +201,24 @@ footer{
     margin: auto;
 }
 .conteinFooter{
-    @include flex;
+    @include mobile{
+        display: flex;
+        flex-direction: column
+    }
+    @include desktop{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
     padding: 20px
 }
 .columna{
+    @include mobile{
+        text-align: center;
+    }
+    @include desktop {
+        text-align: left;
+    }
     width: 100%;
     max-width: 1000px;
 }
@@ -212,6 +261,16 @@ $redes: (
     }
 }
 .columna2{
+    @include mobile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    @include tablet{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     p{
     color: whitesmoke;  
     }
@@ -511,13 +570,12 @@ tfoot{
     font-weight: bolder;          
       }
 }
-@media only screen and (min-width: 768px) {
-    .contenedor{
-    grid-template-areas: "header header"
-    "nav nav"
-    "article article"
-    "section section"
-    "footer footer"
-    ;
-}
+@media only screen and (max-width: 768px) {
+    .contenedor {
+        grid-template-areas: "header header"
+        "nav nav"
+        "article article"
+        "Section section"
+        "footer footer";
+    }
 }
